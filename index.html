@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Themes</title>
+    <title>Dress</title>
+    <style>
+        body{
+            background-color: #FA8BFF;
+            background-image: linear-gradient(45deg, #FA8BFF 25%, #2BD2FF 52%, #2BFF88 90%);
+            min-height: 100vh;
+        }
+        .heading{
+            text-align: center;
+        }
+        .container{
+            background-color: white;
+            border-radius: 30px;
+            padding: 20px;
+            display: block;
+            margin: 10px auto;
+        }
+        .image{
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
 </head>
 <body>
+    <h1 class="heading">Buy Your Favourite colour!</h1>
+    <div class="container">
+        <img src="pink-dress.png" id="dress" height="400vh" class="image"/>
+        <button type="button" id="redDress" onclick="redDress()" class="colour-button">Red</button>
+        <button type="button" id="pinkDress" onclick="pinkDress()" class="colour-button">Pink</button>
+        <button type="button" id="blueDress" onclick="blueDress()" class="colour-button">Blue</button>
+        <button type="button" id="greenDress" onclick="greenDress()" class="colour-button">Green</button>
+        <button type="button" id="blackDress" onclick="blackDress()" class="colour-button">Black</button>
+    </div>
+    
     
 </body>
 </html>
