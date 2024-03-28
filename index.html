@@ -1,42 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dress</title>
     <style>
-        body{
+        body {
             background-color: #FA8BFF;
             background-image: linear-gradient(45deg, #FA8BFF 25%, #2BD2FF 52%, #2BFF88 90%);
             min-height: 100vh;
         }
-        .heading{
+
+        .heading {
             text-align: center;
         }
-        .container{
+
+        .container {
             background-color: white;
             border-radius: 30px;
             padding: 20px;
             display: block;
             margin: 10px auto;
         }
-        .image{
+
+        .image {
             display: block;
             margin: 10px auto;
         }
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .colour-button {
+            padding: 10px 40px;
+            font-size: 20px; 
+            border-radius: 30px; 
+            border: solid 1px black;          
+        }
     </style>
 </head>
+
 <body>
     <h1 class="heading">Buy Your Favourite colour!</h1>
     <div class="container">
-        <img src="pink-dress.png" id="dress" height="400vh" class="image"/>
-        <button type="button" id="redDress" onclick="redDress()" class="colour-button">Red</button>
-        <button type="button" id="pinkDress" onclick="pinkDress()" class="colour-button">Pink</button>
-        <button type="button" id="blueDress" onclick="blueDress()" class="colour-button">Blue</button>
-        <button type="button" id="greenDress" onclick="greenDress()" class="colour-button">Green</button>
-        <button type="button" id="blackDress" onclick="blackDress()" class="colour-button">Black</button>
+        <img src="pink-dress.png" id="dress" height="400vh" class="image" />
+        <div class="buttons">
+            <button type="button" id="redDress" onclick="redDress()" class="colour-button">Red</button>
+            <button type="button" id="pinkDress" onclick="pinkDress()" class="colour-button">Pink</button>
+            <button type="button" id="blueDress" onclick="blueDress()" class="colour-button">Blue</button>
+            <button type="button" id="greenDress" onclick="greenDress()" class="colour-button">Green</button>
+            <button type="button" id="blackDress" onclick="blackDress()" class="colour-button">Black</button>
+        </div>
     </div>
-    
-    
+    <script>
+        function redDress() {
+            const colour = document.getElementById("dress");
+            colour.src = "red-dress.png";
+        }
+        function pinkDress() {
+            const colour = document.getElementById("dress");
+            colour.src = "pink-dress.png";
+        }
+        function blueDress() {
+            const colour = document.getElementById("dress");
+            colour.src = "blue-dress.png";
+        }
+        function greenDress() {
+            const colour = document.getElementById("dress");
+            colour.src = "green-dress.png";
+        }
+        function blackDress() {
+            const colour = document.getElementById("dress");
+            colour.src = "black-dress.png";
+        }
+    </script>
+
 </body>
+
 </html>
